@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 20px 60px 0px 20px;
+}
+
+footer {
+  position: fixed; 
+  bottom: 0; 
+  margin: 10px 0px 20px 0px;
+}
+/*---------- INDEX ---------- */
+/* Estilo base del botón */
+.registro-btn {
+  background-color: #0074D9; /* Azul */
+  color: #fff; /* Texto blanco */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover */
+.registro-btn:hover {
+  background-color: #fff; /* Fondo blanco */
+  color: #0074D9; /* Texto azul */
+}
+
+/* Estilo del contenedor central */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% del alto de la ventana */
+}
+
+/*---------- INDEX ---------- */
