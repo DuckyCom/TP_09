@@ -1,0 +1,23 @@
+       @{
+        // --- Acá el usuario eligió logearse y lo manda a acá ---
+       }
+
+
+<h2>Login</h2>
+    <form action='@Url.Action("ResultadoLogin", "Home", new {username = "username", contraseña = "contraseña1", contraseña2 = "contraseña2"})' onsubmit="return ValidarContraseña(contraseña1, contraseña2);" method="post"> 
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password1">Contraseña:</label>
+        <input type="password" id="contraseña1" name="contraseña" required><br>
+
+        <label for="password2">Repetir Contraseña:</label>
+        <input type="password" id="contraseña2" name="contraseña2" required><br>
+
+        <input type="submit" value="Registrar">
+    </form> 
+
+    <div class="center-container">
+   
+    <a class="registro-btn" href='@Url.Action("OlvideMiContraseña", "Home")'><button>Olvidé mi contraseña</button></a>
+</div>

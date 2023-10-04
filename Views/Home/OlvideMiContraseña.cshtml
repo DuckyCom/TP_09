@@ -1,0 +1,20 @@
+@* Pagina para ver la contraseña (y cambiarla)
+
+Preguntar por su mail
+Si esta:
+Preguntar por algun dato extra (su nombre de usuario o su telefono)
+    Si responde: mostrarle la contraseña (y darle opcion de cambiarla)
+Si no tiene: no tiene*@
+
+<h1>HOLA</h1>
+
+<form action='@Url.Action("NuevaContraseña", "Home", new {username = "username", contraseña = "contraseña1"})' method="post"> 
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password1">Contraseña:</label>
+        <input type="password" id="contraseña1" name="contraseña" required><br>
+
+        
+        <input type="submit" value="Registrar">
+    </form> 

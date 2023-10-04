@@ -27,7 +27,9 @@
             return true;
         }
     </script> 
-    THIS SHIT AINT WORKIN 🗣🗣🗣*@ 
+    THIS SHIT AINT WORKIN 🗣🗣🗣
+    saque el action="Index" del form. por las dudas lo escribo aca por si termina siendo algo importnate
+    *@ 
 
 
 
@@ -35,7 +37,7 @@
 <body>
 
     <h2>Registro de Usuario</h2>
-    <form onsubmit="return ValidarContraseña(contraseña1, contraseña2);" action="Index" method="post"> 
+    <form action='@Url.Action("IngresarUsuarioABD", "Home")'  method="post"> 
         <label for="username">Nombre de usuario:</label>
         <input type="text" id="username" name="username" required><br>
 
@@ -43,10 +45,19 @@
         <input type="password" id="contraseña1" name="password1" required><br>
 
         <label for="password2">Repetir Contraseña:</label>
-        <input type="password" id="contraseña2" name="password2" required><br>
+        <input type="password" id="contraseña2" name="password2" required><br> 
+
+        <label for="nombre">Nombre para la página :</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="password2">E-mail:</label>
+        <input type="text" id="email" name="email" required><br>
+
+        <label for="password2">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br>
 
         <input type="submit" value="Registrar">
     </form> 
-   @* Por las dudas lo pongo asi para testear la pagina*@
+   @* Por las dudas lo pongo asi para testear la pagina. Arreglar que se esta pasando al objeto 2 contraseñas*@
 </body>
 </html>
