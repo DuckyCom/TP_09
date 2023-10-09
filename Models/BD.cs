@@ -44,10 +44,10 @@ public class BD{
         return us; 
     }
 
-    public static void CambiarContraseña(string username, string nuevaContraseña, string email){
-        string sql = "Update Usuario set contraseña = @pNuevaContraseña where username = @pUsername AND email = @pEmail";
+    public static void CambiarContraseña(string username, string nuevaContraseña, string telefono){
+        string sql = "Update Usuario set contraseña = @pNuevaContraseña where username = @pUsername AND telefono = @pTelefono";
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            db.Execute(sql, new {pNuevaContraseña = nuevaContraseña, pUsername = username, pEmail = email});
+            db.Execute(sql, new {pNuevaContraseña = nuevaContraseña, pUsername = username, pTelefono = telefono});
         }
     }
 }

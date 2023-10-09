@@ -8,12 +8,12 @@ Si no tiene: no tiene*@
 
 <h1>HOLA</h1>
 
-<form action='@Url.Action("NuevaContraseña", "Home", new {username = "username", nuevaContraseña = "contraseña", email = "email"})' method="post" onsubmit="return ValidarContraseña();"> 
+<form action='@Url.Action("NuevaContraseña", "Home", new {username = "username", nuevaContraseña = "contraseña", telefono = "telefono"})' method="post" onsubmit="return ValidarContraseña2();"> 
         <label for="username">Nombre de usuario:</label>
         <input type="text" id="username" name="username" required><br>
 
-        <label for="Email">Email:</label>
-        <input type="text" id="email" name="email" required><br>
+         <label for="tel">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br>
 
         <label for="password1">Nueva contraseña:</label>
         <input type="password" id="contraseña1" name="nuevaContraseña" required><br>
