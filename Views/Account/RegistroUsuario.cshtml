@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Usuario</title>
+
+
+
+</head>
+<body>
+
+    <h2>Registro de Usuario</h2>
+    <form action='@Url.Action("IngresarUsuarioABD", "Account", new {username = "username", contraseña = "contraseña", nombre = "nombre", email = "email", telefono = "telefono"})'  method="post" onsubmit="return ValidarContraseña();"> 
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password1">Contraseña:</label>
+        <input type="password" id="contraseña1" name="contraseña" required><br>
+
+        <label for="password2">Repetir Contraseña:</label>
+        <input type="password" id="contraseña2" name="contraseña2" required><br> 
+
+        <label for="nombre">Nombre para la página :</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="Email">E-mail:</label>
+        <input type="text" id="email" name="email" required><br>
+
+        <label for="tel">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br>
+
+        <input type="submit" value="Registrar">
+    </form> 
+</body>
+</html>

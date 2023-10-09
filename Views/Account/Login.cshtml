@@ -4,7 +4,7 @@
 
 
 <h2>Login</h2>
-    <form action='@Url.Action("ResultadoLogin", "Home", new {username = "username", contraseña = "contraseña1"})'  method="post"> 
+    <form action='@Url.Action("ResultadoLogin", "Account", new {username = "username", contraseña = "contraseña1"})'  method="post"> 
         <label for="username">Nombre de usuario:</label>
         <input type="text" id="username" name="username" required><br>
 
@@ -19,5 +19,5 @@
 
     <div class="center-container">
    
-    <a class="registro-btn" href='@Url.Action("OlvideMiContraseña", "Home")'><button>Olvidé mi contraseña</button></a>
+    <a class="registro-btn" href='@Url.Action("OlvideMiContraseña", "Account")'><button>Olvidé mi contraseña</button></a>
 </div>

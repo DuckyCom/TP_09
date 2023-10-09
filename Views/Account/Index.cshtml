@@ -1,0 +1,14 @@
+﻿@{ //Pagina de LogIn
+    ViewData["Title"] = "Index";
+}
+
+<h1>TP 09 - Index</h1>
+@* Confetti xd *@
+<script type="text/javascript" src="~/wwwroot/js/confetti-index.js>"></script> 
+
+<script src="~/js/site.js"></script>
+
+<div class="center-container">
+    <a class="registro-btn" href='@Url.Action("Login", "Account")'><button>Log In</button></a>
+    <a class="registro-btn" href='@Url.Action("RegistroUsuario", "Account")'><button>Registrarse</button></a>
+</div>
