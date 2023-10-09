@@ -5,6 +5,7 @@
 
 
 function ValidarContraseña(){
+    console.log("hola")
     const contraseña1 = document.getElementById('contraseña1').value;
     const contraseña2 = document.getElementById('contraseña2').value; 
     const caracteresEspeciales = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '{', '}', '\\', '[', ']', '|', '°', ':', ';', '<', '>', ',', '.', '?', '~'];
@@ -13,11 +14,15 @@ function ValidarContraseña(){
     let contieneMayuscula = false;
 
     for (let i = 0; i < contraseña1.length; i++) {
+        console.log("entro al for")
         if (contraseña1[i] !== contraseña1[i].toLowerCase()) {
             contieneMayuscula = true;
+            console.log("letra mayus: " + contraseña1[i])
             break;
         }
     }
+
+    
 
     for (let i = 0; i < caracteresEspeciales.length; i++) {
         if (contraseña1.includes(caracteresEspeciales[i])) {
@@ -25,7 +30,7 @@ function ValidarContraseña(){
             break;
         }
     }
-    if (contraseña1 === contraseña2 && contraseña1.length >= 8 && contieneCaracterEspecial == true) {
+    if (contraseña1 === contraseña2 && contraseña1.length >= 8 && contieneCaracterEspecial == true && contieneMayuscula == true) {
         return true;
     }
     if(contraseña1 !== contraseña2)

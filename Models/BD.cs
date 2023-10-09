@@ -10,7 +10,7 @@ namespace TP_09.Models
 {
     
 public class BD{
-    private static string _connectionString = @"Server=.; Database=BDTP09; Trusted_Connection=True;"; 
+    private static string _connectionString = @"Server=.; Database=BD; Trusted_Connection=True;"; 
 
     public static void RegistroUsuario(Usuario us){
         Console.WriteLine("Entro a BD");
