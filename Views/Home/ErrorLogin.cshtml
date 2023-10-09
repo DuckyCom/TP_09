@@ -1,0 +1,13 @@
+
+        @{
+            // --- Si llegó a esta view es porque lo que ingresó es incorrecto, que haya 2 buttons, "¿Olvidó su Contraseña" o "Volver a intentar"--
+        }
+
+<h1>¡ERROR!</h1>
+<br><br> @* si, 2 br para 2 espacios *@
+<h4>Sus datos ingresados no son correctos: @ViewBag.MensajeError</h4> @*Por alguna razon no muestra el viewbag*@
+
+ <div class="center-container">
+    <a class="registro-btn" href='@Url.Action("Login", "Home")'><button>Log In</button></a>
+    <a class="registro-btn" href='@Url.Action("RegistroUsuario", "Home")'><button>Registrarse</button></a>
+</div>
